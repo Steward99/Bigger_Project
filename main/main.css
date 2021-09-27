@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.main-header{
+    background-color: rgba(0, 0, 0, 0.116);
+    background-image: url('/img/header-bg.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+}
+
+.main-nav{
+    text-align: center;
+}
+
+.main-nav ul{
+    margin: 0;
+}
+
+.main-nav li{
+    padding: 0  5%;
+    display: inline;
+}
+
+.main-nav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+}
+.store-name{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    color: white;
+    font-weight: normal;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.store-name-large{
+    font-size: 7em;
+}
+
+.main-nav a:hover{
+    background-color: #eee;
+}
+
+#sidebar{
+    margin-top: 80px;
+    position: fixed;
+    max-width: 30%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+#sidebar-menu{
+    margin: 10px 10px;
+    width: 100%;
+    height: 50vh;
+    border: 5px solid dodgerblue;
+    background-color: deepskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sidebar-bar{
+    font-size: 1.1rem;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-bar:hover{
+    background-color: rgb(30, 144, 255);
+}
+
+#bodies{
+    padding-left: 160px;
+}
+
+#inside{
+    border: 5px solid dodgerblue;
+    margin: 15px 10px;
+    background-color: rgba(30, 144, 255, 0.2);
+    padding: 15px 15px;
+    font-size: 1.75rem;
+}
+
+#fam{
+    margin-top: 15px;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+label{
+    font-size: 1rem;
+
+}
+
+
+.main-footer{
+    background: linear-gradient(to bottom , darkblue,black);
+    padding: .25em 0;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li{
+    padding: .5em 0;
+}
+
+.footer-nav img{
+
+    width: 60px;
+    height: 60px;
+}
+

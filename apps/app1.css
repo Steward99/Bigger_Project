@@ -1,0 +1,150 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    background-color: aliceblue;
+}
+
+.main-header{
+    background-color: rgba(0, 0, 0, 0.116);
+    background-image: url('/img/header-bg.jpg');
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-bottom: 30px;
+}
+
+.main-nav{
+    text-align: center;
+}
+
+.main-nav ul{
+    margin: 0;
+}
+
+.main-nav li{
+    padding: 0  5%;
+    display: inline;
+}
+
+.main-nav a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em;
+}
+.store-name{
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    color: white;
+    font-weight: normal;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.store-name-large{
+    font-size: 7em;
+}
+
+.main-nav a:hover{
+    background-color: #eee;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    margin: 0 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.alert{
+    color: red;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#app-name{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: darkblue;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.todoinput{
+    font-size: 2rem;
+    min-width: 50%; 
+    padding: 10px 15px;
+    border: 4px solid darkblue;
+}
+
+#add-btn{
+    font-size: 2rem;
+    cursor: pointer;
+    border: 3px solid darkblue;
+}
+
+.todo-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todoul{
+    min-width: 40%;
+    list-style: none;
+}
+
+.tododiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, rgb(43, 43, 156), rgb(40, 40, 255));
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.checked{
+    opacity: 0.6;
+    text-decoration: line-through;
+}
+
+.todolist{
+    flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 35px;
+}
+
+.check-btn , .delete-btn{
+    background-color: lightblue;
+    font-size: 1.25rem;
+}
+
+.check-btn{
+    background-color: lightgreen;
+}
+
+.check-btn:hover , .delete-btn:hover{
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+
+.fall{
+    transform: translateY(50px),rotatez(20deg);
+    opacity: 0;
+}

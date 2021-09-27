@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Game</title>
+    <link rel="stylesheet" href="/game1/theme.css">
+    <script src="/game1/theme.js" async></script>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/main/main.html">HOME</a></li>
+                <li><a href="/shop/shop.html">SHOP</a></li>
+                <li><a href="/game1/game.html">GAME</a></li>
+                <li><a href="/tour/tour.html">TOUR</a></li>
+                <li><a href="/apps/app1.html">APPS</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h1 class="store-name store-name-large">Glyupi</h1>
+    </header>
+    <div class="whole-con">
+        <h1 class="game-title">MATCH - OR - LOSE</h1>
+        <div class="theme">
+            <a href="/game1/game.html"><button class="change-theme">THEME</button></a>
+        </div>
+         <div class="overlay-page visible">
+                Click to Start
+            </div>
+            <div id="game-over-page" class="overlay-page">
+                GAME OVER !!
+                <span class="overlay-page-small">Click to Restart</span>
+            </div>
+            <div id="victory-page" class="overlay-page">
+                VICTORY !!
+                <span class="overlay-page-small">Click to Restart</span>
+            </div>
+        <div class="game-container">
+            <div class="game-info-container">
+                <div class="game-info">
+                    Time <span id="game-time">60</span>
+                </div>
+                <div class="game-info">
+                    Flips <span id="game-flips">0</span>
+                </div>
+            </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="witch-hat card-img" src="/game1/source/images/witch-hat.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="witch-hat card-img" src="/game1/source/images/witch-hat.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="bat card-img" src="/game1/source/images/bat.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="bat card-img" src="/game1/source/images/bat.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="candle card-img" src="/game1/source/images/candle.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="candle card-img" src="/game1/source/images/candle.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="coffin card-img" src="/game1/source/images/coffin.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="coffin card-img" src="/game1/source/images/coffin.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="eye card-img" src="/game1/source/images/eye.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="eye card-img" src="/game1/source/images/eye.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="ghost card-img" src="/game1/source/images/ghost.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="ghost card-img" src="/game1/source/images/ghost.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="pumkin card-img" src="/game1/source/images/pumkin.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="pumkin card-img" src="/game1/source/images/pumkin.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="skull card-img" src="/game1/source/images/skull.png">
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-back card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/spider-web1.png">
+                <img class="spider" src="/game1/source/images/spider1.png">
+            </div>
+            <div class="card-front card-face">
+                <img class="spider-web top-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web top-right-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-left-web" src="/game1/source/images/black-web.png">
+                <img class="spider-web bottom-right-web" src="/game1/source/images/black-web.png">
+                <img class="skull card-img" src="/game1/source/images/skull.png">
+            </div>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+        <h3 class="store-name store-name-foot">Glyupi</h3>
+            <ul class="main-nav footer-nav">
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank">
+                    <img src="/img/youtube.png">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/steward99/" target="_blank">
+                        <img src="/img/instagram.png">
+                        </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/ste.ward.58" target="_blank">
+                        <img src="/img/facebook.png">
+                        </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
